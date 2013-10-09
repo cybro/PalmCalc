@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/appback"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight=".3"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/displayshape"
+            android:orientation="horizontal">
+
+        <com.cybrosys.basic.CalculatorDisplay
+                android:id="@+id/display"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+
+                maxDigits="@integer/max_digits">
+
+            <com.cybrosys.basic.CalculatorEditText
+                    android:id="@+id/txtInput"
+                    style="@style/display_style"
+                    android:imeOptions="flagNoExtractUi"/>
+
+            <com.cybrosys.basic.CalculatorEditText
+                    android:id="@+id/txtOutput"
+                    style="@style/display_style"
+                    android:imeOptions="flagNoExtractUi"/>
+        </com.cybrosys.basic.CalculatorDisplay>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <TableLayout
+                android:id="@+id/tabcalc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center">
+
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="DEL"
+                        style="@style/basic_calc"
+                        android:id="@+id/buttonDel"
+                        android:background="@drawable/basic_btn_red"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="("
+                        android:tag="("
+                        android:id="@+id/btnopen"
+                        style="@style/basic_calc"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text=")"
+                        android:tag=")"
+                        android:id="@+id/btnclose"
+                        style="@style/basic_calc"
+                        android:background="@drawable/basic_btn_operation"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="-"
+                        android:tag="-"
+                        style="@style/basic_calc"
+                        android:id="@+id/btnminus"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                <Button
+                        android:layout_width="0dp"
+                        style="@style/basic_calc"
+                        android:layout_height="fill_parent"
+                        android:text="7"
+                        android:tag="7"
+                        android:id="@+id/btn7"
+
+                        android:background="@drawable/basic_btn_normal"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="8"
+                        android:tag="8"
+                        android:id="@+id/btn8"
+                        style="@style/basic_calc"
+                        android:background="@drawable/basic_btn_normal"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:background="@drawable/basic_btn_normal"
+                        android:layout_height="fill_parent"
+                        android:text="9"
+                        android:tag="9"
+                        style="@style/basic_calc"
+                        android:id="@+id/btn9"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="+"
+                        android:tag="+"
+                        style="@style/basic_calc"
+                        android:id="@+id/btnplus"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="4"
+                        style="@style/basic_calc"
+                        android:tag="4"
+                        android:id="@+id/btn4"
+                        android:background="@drawable/basic_btn_normal"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="5"
+                        android:tag="5"
+                        android:id="@+id/btn5"
+                        style="@style/basic_calc"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="6"
+                        android:tag="6"
+                        style="@style/basic_calc"
+
+
+                        android:id="@+id/btn6"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="/"
+                        android:tag="/"
+                        android:id="@+id/btndiv"
+                        style="@style/basic_calc"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="1"
+                        android:tag="1"
+                        android:id="@+id/btn1"
+                        android:layout_weight="1"
+                        style="@style/basic_calc"
+
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="2"
+                        android:tag="2"
+                        android:id="@+id/btn2"
+                        style="@style/basic_calc"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="3"
+                        android:tag="3"
+                        android:id="@+id/btn3"
+                        style="@style/basic_calc"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="×"
+                        android:tag="×"
+                        android:id="@+id/btnmul"
+                        style="@style/basic_calc"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="."
+                        android:tag="."
+                        android:id="@+id/btnpoint"
+                        android:layout_weight="1"
+                        style="@style/basic_calc"
+
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="0"
+                        android:tag="0"
+                        android:id="@+id/btn0"
+                        android:layout_weight="1"
+                        style="@style/basic_calc"
+
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="%"
+                        android:tag="%"
+                        style="@style/basic_calc"
+                        android:id="@+id/btnper"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:textColor="#FFFFFF"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="="
+                        style="@style/basic_calc"
+
+                        android:id="@+id/ButtonEqual"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:textColor="#FFFFFF"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

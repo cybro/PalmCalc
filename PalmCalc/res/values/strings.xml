@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PalmCalc</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the device orientation</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+    <string name="pref_displayHead">Orientation</string>
+    <string name="pref_display">Display</string>
+    <string name="pref_Number">Number Format</string>
+    <string name="pref_Decimal">Digit Grouping</string>
+    <string name="pref_DecimalSumm">To logically group numbers</string>
+    <string name="pref_DecimalPts">Decimal Points</string>
+    <string name="pref_DecimalPtsSumm">Set the number of decimal points</string>
+    <string name="pref_vibe">Vibration</string>
+    <string name="pref_vibeSumm">Vibrate on key press</string>
+    <string name="pref_NotiHead">Notification</string>
+    <string name="pref_Noti">Enable Notification Bar</string>
+    <string name="pref_NotiSummary">Display Notification Bar</string>
+    <string name="pref_numformat">Number Format</string>
+    <string name="pref_buttonfeed">Keypad</string>
+    <string name="pref_screentimeSumm">Prevent screen from turning off</string>
+    <string name="pref_screentime">Keep Screen On</string>
+    <string name="pref_startScreen">Start Screen</string>
+    <string name="pref_startScreensumm">Set the startup screen</string>
+    <string name="pref_HideScreen">Hide </string>
+    <string name="pref_HideScreensumm">Hides the selected </string>
+    <string name="title_timezone_add">ADD TIME ZONE</string>
+    <string name="title_timezone_edit">EDIT TIME ZONE</string>
+    <string name="timezone_pick_zone">PICK A TIME ZONE</string>
+    <string name="timezone_pick_name">Custom name</string>
+    <string name="timezone_save">Save</string>
+    <string name="timezone_cancel">Cancel</string>
+    <string name="timezone_search_filter">Type to easy search</string>
+    <string name="error_must_pick_zone_name">Please select a timezone and custom name</string>
+    <string name="clear_mem">Clear Memories</string>
+    <string name="clear_hist">Clear History</string>
+    <string name="menu_add">Add</string>
+    <string name="SinIn">sin<sup><small>-1</small></sup></string>
+    <string name="CosIn">cos<sup><small>-1</small></sup></string>
+    <string name="TanIn">tan<sup><small>-1</small></sup></string>
+    <string name="LnIn">e<sup><small>x</small></sup>        ")</string>
+    <string name="LogIn">10<sup><small>x</small></sup></string>
+    <string name="error">Error</string>
+    <string name="SharedPref">com.cybrosys.scientific</string>
+    <string name="strFltpt">FloatPt</string>
+    <string name="strBlank"></string>
+    <string name="strDeg">[DEG]</string>
+    <string name="strTAB">TAB</string>
+    <string name="strRCL">RCL</string>
+    <string name="strSTO">STO</string>
+    <string name="strMinus">M-</string>
+    <string name="strAsin">asin(</string>
+    <string name="strAcos">acos(</string>
+    <string name="strAtan">atan(</string>
+    <string name="strbtDEG">DEG</string>
+    <string name="strFSE">FSE</string>
+    <string name="strMR">MR</string>
+    <string name="strMS">MS</string>
+    <string name="strPlus">M+</string>
+    <string name="strHyp">hyp</string>
+    <string name="strSin">sin</string>
+    <string name="strCos">cos</string>
+    <string name="strTan">tan</string>
+    <string name="strLn">ln</string>
+    <string name="strLog">Log</string>
+    <string name="strBO">(</string>
+    <string name="strBC">)</string>
+    <string name="strFact">n!</string>
+    <string name="strComb">c(n,r)</string>
+    <string name="strPer">p(n,r)</string>
+    <string name="strE">e</string>
+    <string name="strComa">,</string>
+    <string name="strCnst">CNST</string>
+    <string name="strMod">MOD</string>
+    <string name="strShift">ALT</string>
+    <string name="strPi">\u03c0</string>
+    <string name="strPerc">%</string>
+    <string name="strMem">Memory</string>
+    <string name="strDP">Decimal Places</string>
+    <string name="str0">0</string>
+    <string name="str1">1</string>
+    <string name="str2">2</string>
+    <string name="str3">3</string>
+    <string name="str4">4</string>
+    <string name="str5">5</string>
+    <string name="str6">6</string>
+    <string name="str7">7</string>
+    <string name="str8">8</string>
+    <string name="str9">9</string>
+    <string name="str10">10</string>
+    <string name="strAtom">Atomic &amp; Nuclear</string>
+    <string name="strElectMass">Electron Mass\n299,792,458</string>
+    <string name="strProtMass">Proton Mass\n6067428x</string>
+    <string name="strFStru">Fine Structure Constant</string>
+    <string name="strRyd">Rydberg Constant</string>
+    <string name="strBohr">Bohr Radius</string>
+    <string name="strClassi">Classical Electron Radius</string>
+    <string name="strRyd1">Rydberg Constant</string>
+    <string name="strConstants">CONSTANTS</string>
+    <string name="strU">Universal</string>
+    <string name="strEM">Electromagnetic</string>
+    <string name="strPC">Physico-Chemical</string>
+    <string name="strOther">Other</string>
+    <string name="strSpeedLigh">Speed of light\n299,792,458</string>
+    <string name="strGravi">Gravitational constant\n6067428x</string>
+    <string name="strPlank">Planck Constant</string>
+    <string name="strRdPlank">Reduced Planck Constant</string>
+    <string name="strHistory">History</string>
+    <string name="strAMU">Atomic Mass Unit</string>
+    <string name="strAvo">Avogadro Constant</string>
+    <string name="strFaraday">Faraday Constant</string>
+
+    <string-array name="strContext">
+        <item>CUT</item>
+        <item>COPY</item>
+        <item>PASTE</item>
+    </string-array>
+    <string-array name="strContextEm">
+        <item>PASTE</item>
+    </string-array>
+    <string-array name="strContextHa">
+        <item>CUT</item>
+        <item>COPY</item>
+    </string-array>
+    <string-array name="strContextEmpty">
+        <item>Empty!</item>
+    </string-array>
+
+    <color name="HistColor">#0000FF</color>
+
+    <string name="add_time">ADD</string>
+    <string name="strMolar">Molar Gas Constant</string>
+    <string name="strBoltz">Boltzmann Constant</string>
+    <string name="strStef">Stefan-Boltzmann Constant</string>
+    <string name="strEle">Electron Volt</string>
+    <string name="strStd">Standard Gravity</string>
+    <string name="strMc">Magnetic Constant\n1.255</string>
+    <string name="strElectric">Electric constant\n6067428x</string>
+    <string name="strElem">Elementary Charge</string>
+    <string name="strMFQ">Magnetic Flux Quantum</string>
+    <string name="strCQ">Conductance Quantum</string>
+    <string name="crrefresh">Refresh</string>
+
+    <!-- unit -->
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="clear">Clr</string>
+    <string name="delete">Del</string>
+    <string name="zero">0</string>
+    <string name="unitconv">UNIT CONVERTER</string>
+    <string name="plus_minus">+/-</string>
+    <string name="tipplus_minus">00</string>
+    <string name="value_entering">value entering</string>
+    <string name="point">.</string>
+    <string name="android_wheel_picker">Android Wheel Picker</string>
+    <string name="weightunitkg">Kg</string>
+    <string name="weightunitgm">gm</string>
+    <string name="weightunitlb">lb</string>
+    <string name="weightunitounce">ounce</string>
+    <string name="weightunitmg">mg</string>
+    <string name="temperatureunitc">C</string>
+    <string name="temperatureunitf">F</string>
+    <string name="temperatureunitk">K</string>
+    <string name="temperatureunitR">R</string>
+    <string name="lengthunitcm">cm</string>
+    <string name="lengthunitm">m</string>
+    <string name="lengthunitmm">mm</string>
+    <string name="lengthunitkm">km</string>
+    <string name="lengthunitfeet">ft</string>
+    <string name="lengthunitmile">mi</string>
+    <string name="lengthunitinch">inch</string>
+    <string name="lengthunityard">yard</string>
+    <string name="lengthunitNM">NM</string>
+    <string name="areaunitsqmm">mm#2</string>
+    <string name="areaunitsqm">m#2</string>
+    <string name="areaunitsqcm">cm#2</string>
+    <string name="areaunitsqkm">km#2</string>
+    <string name="areaunitsqmiles">mil#2</string>
+    <string name="areaunitsqyard">yd#2</string>
+    <string name="areaunithectare">ha</string>
+    <string name="massunitg">g</string>
+    <string name="massunitkg">kg</string>
+    <string name="massunitmetrictones">t</string>
+    <string name="massunitpounds">lb</string>
+    <string name="massunitounces">oz</string>
+    <string name="speedunitmps">m/s</string>
+    <string name="speedunitmpmin">m/m</string>
+    <string name="speedunitkph">km/h</string>
+    <string name="speedunitftpsec">ft/s</string>
+    <string name="speedunitftpermin">ft/m</string>
+    <string name="speedunitMph">mil/h</string>
+    <string name="timeunityr">y</string>
+    <string name="timeunitday">d</string>
+    <string name="timeunithr">h</string>
+    <string name="timeunitmin">min</string>
+    <string name="timeunitsecond">s</string>
+    <string name="volumeunitmillilitres">ml</string>
+    <string name="volumeunitlitres">l</string>
+    <string name="volumeunitcubicmm">mm#3</string>
+    <string name="volumeunitcubiccm">cm#3</string>
+    <string name="volumeunitcubicm">m#3</string>
+    <string name="volumeunitcubicfeet">ft#3</string>
+    <string name="cntry">COUNTRY</string>
+    <string name="prcntg">%</string>
+    <string name="Bill">Bill Amount</string>
+    <string name="splt">SPLIT</string>
+    <string name="Tip_Amnt">Tip Amount</string>
+    <string name="total_topay">Total To Pay</string>
+    <string name="total_perprsn">Total Per Person</string>
+
+    <color name="prefs_bg">#000000</color>
+
+    <string name="_1">1</string>
+    <string name="text_home">This is just example of using<b>Simple Social Sharing</b>        project\n\nYou can see right design of sharing here -<a href="">http://www.androidpatterns.com/uap_pattern/share-button</a></string>
+    <!-- Facebook events -->
+    <string name="toast_facebook_auth_success">Facebook authentication is successful</string>
+    <string name="toast_facebook_auth_fail">Error was occurred during Facebook authentication</string>
+    <string name="facebook_post_published">Posted to Facebook successfully</string>
+    <string name="facebook_post_publishing_failed">Post publishing was failed</string>
+    <string name="facebook_logged_out">You are logged out</string>
+    <!-- Twitter events -->
+    <string name="toast_twitter_auth_success">Twitter authentication is successful</string>
+    <string name="toast_twitter_auth_fail">Error was occurred during Twitter authentication</string>
+    <string name="twitter_post_published">Tweeted successfully</string>
+    <string name="twitter_post_publishing_failed">Tweet failed</string>
+    <string name="twitter_logged_out">You are logged out</string>
+    <!-- Text and labels -->
+    <string name="share_message_title">Message</string>
+    <string name="button_facebook_post">Post on Facebook</string>
+    <string name="button_facebook_post_image">Post image on Facebook</string>
+    <string name="button_twitter_post">Post on Twitter</string>
+    <string name="button_share_facebook">Share on Facebook</string>
+    <string name="button_share_twitter">Share on Twitter</string>
+    <string name="menu_logout">Logout</string>
+
+</resources>

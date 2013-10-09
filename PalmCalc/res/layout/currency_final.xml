@@ -1,0 +1,341 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/idCurrencyMain"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/appback"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/linlaHeaderProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                    <ProgressBar
+                            android:id="@+id/pbHeaderProgress"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                    </ProgressBar>
+
+                    <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Updating...."
+                            android:textColor="#ffffff">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/backbox"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                        <ImageView
+                                android:id="@+id/imageHead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/cop"/>
+
+                        <TextView
+                                android:id="@+id/textHead"
+                                style="@style/tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:text="aaaaaaaaa"
+                                android:textColor="#FFFFFF"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight=".1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <EditText
+                            android:id="@+id/editText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/whitebox"
+                            android:gravity="center"
+                            android:inputType="numberDecimal">
+
+                        <requestFocus/>
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <ListView
+                        android:id="@+id/listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:listSelector="@drawable/list_selector"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.cybrosys.palmcalc.WrappingSlidingDrawer
+                android:id="@+id/SlidingDrawer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:content="@+id/tablone"
+                android:handle="@+id/slideButton"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                >
+
+            <Button
+                    android:id="@+id/slideButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+            <TableLayout
+                    android:id="@+id/tablone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:background="@null">
+
+                <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                    <Button
+                            android:id="@+id/btnone"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="1"
+                            android:text="@string/one"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btntwo"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="2"
+                            android:text="@string/two"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnthree"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="3"
+                            android:text="@string/three"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnupdate"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_operation"
+
+                            android:tag="+/-"
+                            android:text="Update"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                    <Button
+                            android:id="@+id/btnfour"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="4"
+                            android:text="@string/four"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnfive"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="5"
+                            android:text="@string/five"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnsix"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="6"
+                            android:text="@string/six"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnclr"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_red"
+                            android:tag="clr"
+                            android:text="@string/clear"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                    <Button
+                            android:id="@+id/btnseven"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="7"
+                            android:text="@string/seven"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btneight"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="8"
+                            android:text="@string/eight"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnnine"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="9"
+                            android:text="@string/nine"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnundo"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_red"
+                            android:tag="del"
+                            android:text="@string/delete"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                    <Button
+                            android:id="@+id/btnzero"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:tag="0"
+                            android:text="@string/zero"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btnpoint"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_operation"
+                            android:tag="."
+                            android:text="@string/point"
+                            android:textColor="#FFFFFF"/>
+
+                    <Button
+                            android:id="@+id/btndone"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_operation"
+                            android:text="Done"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+            </TableLayout>
+        </com.cybrosys.palmcalc.WrappingSlidingDrawer>
+
+    </RelativeLayout>
+
+</LinearLayout>

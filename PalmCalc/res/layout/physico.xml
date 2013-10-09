@@ -1,0 +1,251 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/physi"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_gravity="center">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sm2"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:id="@+id/btnbackphy"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:contentDescription="@string/strBlank"
+                    android:src="@drawable/btn_dialog_back"/>
+
+            <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/strPC"
+                    android:textColor="#2daef0"/>
+
+            <ImageButton
+                    android:id="@+id/butcancelphy"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:contentDescription="@string/strBlank"
+                    android:src="@drawable/btn_dialog_close"/>
+        </LinearLayout>
+
+        <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TableRow
+                        android:id="@+id/tableRow11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center" style="@style/Bmi_result"
+                            android:text="@string/str1"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphyone"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strAMU"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center" style="@style/Bmi_result"
+                            android:text="@string/str2"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphytwo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strAvo"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center" style="@style/Bmi_result"
+                            android:text="@string/str3"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphythree"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strFaraday"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center" style="@style/Bmi_result"
+                            android:text="@string/str4"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphyfour"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strMolar"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center" style="@style/Bmi_result"
+                            android:text="@string/str5"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphyfive"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strBoltz"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center" style="@style/Bmi_result"
+                            android:text="@string/str6"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphysix"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strStef"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center"
+                            android:text="@string/str7" style="@style/Bmi_result"
+                            android:textColor="#2daef0"/>
+
+                    <Button
+                            android:id="@+id/btnphyseven"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/basic_btn_normal"
+                            android:gravity="left|center"
+                            android:text="@string/strEle"
+                            android:textColor="#FFFFFF"/>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

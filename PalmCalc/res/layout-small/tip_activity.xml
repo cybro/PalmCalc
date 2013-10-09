@@ -1,0 +1,446 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/idTipMain"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/appback"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3">
+
+        <TextView
+                android:id="@+id/txtvAmnt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/whitebox"
+                android:clickable="false"
+                android:gravity="center"
+                android:hint="@string/Bill"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textStyle="bold"
+                tools:ignore="NestedWeights,TextViewEdits"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/wheelcovertip">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+            <TextView
+                    android:id="@+id/txtvCountry"
+                    style="@style/tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".00009"
+                    android:gravity="center"
+                    android:text="@string/cntry"
+                    android:textColor="#FFFFFF"/>
+
+            <com.cybrosys.unit.WheelView
+                    android:id="@+id/tipcntry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:tag="1"
+                    tools:ignore="NestedWeights"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5">
+
+            <TextView
+                    android:id="@+id/txtvPerc"
+                    style="@style/tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".00009"
+                    android:gravity="center"
+                    android:text="@string/prcntg"
+                    android:textColor="#FFFFFF"/>
+
+            <com.cybrosys.unit.WheelView
+                    android:id="@+id/tippercentage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:tag="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5">
+
+            <TextView
+                    android:id="@+id/txtvSplit"
+                    style="@style/tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".00009"
+                    android:gravity="center"
+                    android:text="@string/splt"
+                    android:textColor="#FFFFFF"/>
+
+            <com.cybrosys.unit.WheelView
+                    android:id="@+id/tipsplt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:tag="3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0">
+
+        <EditText
+                android:id="@+id/etxtcntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:clickable="true"
+                tools:ignore="TextFields"/>
+
+        <EditText
+                android:id="@+id/etxtprcntg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:clickable="true"
+                android:inputType="number"
+                android:maxLines="2"
+                android:numeric="integer"
+                tools:ignore="Deprecated"/>
+
+        <EditText
+                android:id="@+id/etxtsplt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:clickable="true"
+                android:inputType="number"
+                android:maxLines="2"
+                android:numeric="integer"
+                tools:ignore="Deprecated"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:background="@drawable/backbox">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebox">
+
+            <TextView
+                    android:id="@+id/txtvLbl1"
+                    style="@style/tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight=".2"
+                    android:singleLine="true"
+                    android:text="@string/Tip_Amnt"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:id="@+id/txtTipAmount"
+                    style="@style/tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:singleLine="true"
+                    android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebox">
+
+            <TextView
+                    android:id="@+id/txtvLbl2"
+                    style="@style/tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight=".2"
+                    android:singleLine="true"
+                    android:text="@string/total_topay"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:id="@+id/txtTotalToPay"
+                    style="@style/tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:singleLine="true"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/whitebox">
+
+            <TextView
+                    android:id="@+id/txtvLbl3"
+                    style="@style/tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight=".2"
+                    android:singleLine="true"
+                    android:text="@string/total_perprsn"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:id="@+id/txtTipPerPerson"
+                    style="@style/tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:singleLine="true"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+        <TableLayout
+                android:id="@+id/tablone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ExtraText">
+
+            <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/btnone"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="1"
+                        android:text="@string/one"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btntwo"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="2"
+                        android:text="@string/two"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnthree"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="3"
+                        android:text="@string/three"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnpoint"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_operation"
+                        android:tag="+/-"
+                        android:text="@string/point"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/btnfour"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="4"
+                        android:text="@string/four"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnfive"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="5"
+                        android:text="@string/five"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnsix"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="6"
+                        android:text="@string/six"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnclr"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_red"
+                        android:tag="clr"
+                        android:text="@string/clear"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/btnseven"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="7"
+                        android:text="@string/seven"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btneight"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="8"
+                        android:text="@string/eight"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnnine"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="9"
+                        android:text="@string/nine"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnundo"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_red"
+                        android:tag="del"
+                        android:text="@string/delete"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/btnzero"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/basic_btn_normal"
+                        android:tag="0"
+                        android:text="@string/zero"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btnplusminus"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_effectforpad"
+                        android:tag="00"
+                        android:text="@string/tipplus_minus"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

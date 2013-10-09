@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_display" >
+        <ListPreference
+            android:entries="@array/Orientation"
+            android:entryValues="@array/OrientationValues"
+            android:key="prefOrientation"
+            android:summary="@string/pref_sync_frequency_summary"
+            android:title="@string/pref_displayHead" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefScreen"
+            android:summary="@string/pref_screentimeSumm"
+            android:title="@string/pref_screentime" />
+
+        <ListPreference
+            android:entries="@array/Startscreen"
+            android:entryValues="@array/StartscreenValues"
+            android:key="prefStartScreen"
+            android:summary="@string/pref_startScreensumm"
+            android:title="@string/pref_startScreen" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_buttonfeed" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefVibe"
+            android:summary="@string/pref_vibeSumm"
+            android:title="@string/pref_vibe" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_NotiHead" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefNoti"
+            android:summary="@string/pref_NotiSummary"
+            android:title="@string/pref_Noti" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    pressed 
+    <item android:drawable="@drawable/keydel" android:state_focused="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/keydelon" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/keydelon" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/keydel"/>
+    -->
+    <item android:drawable="@drawable/keydelon1" android:state_pressed="true"/>
+    <!--
+    pressed 
+    <item android:drawable="@drawable/login_mouse_over" android:state_focused="true"/>
+    -->
+    <!-- focused -->
+    <item android:drawable="@drawable/keydel"/>
+    <!-- default -->
+
+</selector>

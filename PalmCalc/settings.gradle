@@ -1,0 +1,1 @@
+include ':Soundpool', ':Soundpool', ':MyApplication', ':MyApplication', ':MyApplication'

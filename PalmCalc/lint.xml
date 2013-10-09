@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/cybrosys/bmi/bmiactivity.java" />
+        <ignore path="src/com/cybrosys/clock/AddTimeZone.java" />
+        <ignore path="src/com/cybrosys/clock/GlobalClockActivity.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/cybrosys/unit/WheelScroller.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/cybrosys/basic/CalculatorEditText.java" />
+        <ignore path="src/com/cybrosys/palmcalc/PalmCalcActivity.java" />
+        <ignore path="src/com/cybrosys/scientific/CalculatorEditText.java" />
+        <ignore path="src/com/cybrosys/unit/CalculatorEditText.java" />
+    </issue>
+</lint>

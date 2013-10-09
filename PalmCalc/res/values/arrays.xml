@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Orientation">
+        <item name="sensor">sensor</item>
+        <item name="landscape">landscape</item>
+        <item name="portrait">portrait</item>
+    </string-array>
+    <string-array name="OrientationValues">
+        <item name="sensor">0</item>
+        <item name="landscape">1</item>
+        <item name="portrait">2</item>
+    </string-array>
+    <string-array name="Startscreen">
+        <item name="scientific">Scientific Calculator</item>
+        <item name="unit">Unit Converter</item>
+        <item name="currency">Currency Converter</item>
+        <item name="basic">Basic Calculator</item>
+        <item name="tip">Tip Calculator</item>
+        <item name="Global">Global Clock</item>
+        <item name="BMI">BMI Calculator</item>
+    </string-array>
+    <string-array name="StartscreenValues">
+        <item name="scientific">0</item>
+        <item name="unit">1</item>
+        <item name="currency">2</item>
+        <item name="basic">3</item>
+        <item name="tip">4</item>
+        <item name="Global">5</item>
+        <item name="BMI">6</item>
+    </string-array>
+    <string-array name="HidescreenValues">
+        <item name="scientific">com.cybrosys.scientific.ScientificActivity</item>
+        <item name="unit">com.cybrosys.unit.AndroidQAActivity</item>
+        <item name="currency">com.cybrosys.currency.CurrencyMain</item>
+        <item name="basic">com.cybrosys.basic.BasicActivity</item>
+        <item name="tip"> com.cybrosys.tip.TipActivity</item>
+        <item name="Global">com.cybrosys.clock.GlobalClockActivity</item>
+        <item name="BMI">com.cybrosys.bmi.bmiactivity</item>
+    </string-array>
+    <string-array name="EMPTY_STRING_ARRAY"></string-array>
+    <string-array name="Decimalpts">
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+    </string-array>
+    <string-array name="DecimalptsValue">
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+    </string-array>
+
+</resources>
