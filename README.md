@@ -56,5 +56,8 @@ It currently consists of
 <br>• Wheel picker for Easy Selection</br>
 
 <h1>Play Store</h1>
-Here's the <a href="https://play.google.com/store/apps/details?id=com.cybrosys.palmcalc">Playstore</a> link
+<a href="https://play.google.com/store/apps/details?id=com.cybrosys.palmcalc">
+  <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+</a>
 
