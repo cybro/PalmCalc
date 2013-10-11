@@ -54,7 +54,7 @@ It currently consists of
 <br>• English and Metric mode Are avaliable</br>
 <br>• Weight categorization Ex.Normal Weight,Under Weight, Obsse etc</br>
 <br>• Wheel picker for Easy Selection</br>
-
+==============================
 <h1>Play Store</h1>
 <a href="https://play.google.com/store/apps/details?id=com.cybrosys.palmcalc">
   <img alt="Get it on Google Play"
